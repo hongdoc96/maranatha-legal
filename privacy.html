@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>마라나타 개인정보처리방침</title>
-<meta name="description" content="마라나타 (Maranatha) 개인정보처리방침 v1.0.6">
+<meta name="description" content="마라나타 (Maranatha) 개인정보처리방침 v1.0.8">
 <style>
 :root{--sapphire:#1B3A6B;--gold:#D4A867;--navy:#0A1F4A;--bg:#fff;--surface:#F4F7FB;--text:#0A1F4A;--text2:#4A6FA5}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -42,7 +42,7 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
 <div class="label">PRIVACY</div>
 <h1>개인정보처리방침</h1>
 <div class="rule"></div>
-<div class="meta">버전 v1.0.6 · 시행일 2026년 6월 18일<br>운영자: 홍독 스튜디오 (Hongdoc Studio)</div>
+<div class="meta">버전 v1.0.8 · 시행일 2026년 7월 2일<br>운영자: 홍독 스튜디오 (Hongdoc Studio)</div>
 </div>
 
 <div class="principle">
@@ -145,7 +145,7 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
 <div class="article"><h2>제6조 (개인정보처리의 위탁)</h2><div class="body">운영자는 서비스 제공을 위해 다음과 같이 개인정보 처리 업무를 위탁하고 있습니다.
 
 [수탁자] Google LLC (Firebase)
-[위탁업무] 회원 인증, 데이터 보관(Firestore), 카카오 로그인 토큰 처리(Cloud Functions, asia-northeast3 서울 리전), 모임 알림 푸시 발송(Firebase Cloud Messaging)
+[위탁업무] 회원 인증, 데이터 보관(Firestore), 카카오 로그인 토큰 처리(Cloud Functions, asia-northeast3 서울 리전), 모임 알림 푸시 발송(Firebase Cloud Messaging), 앱 안정성·오류 진단(Firebase Crashlytics, 크래시 기술 정보 약 90일 보관)
 [보유기간] 회원 탈퇴 또는 위탁계약 종료 시까지
 
 [수탁자] Kakao Corp.
@@ -159,15 +159,17 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
 
 운영자는 위탁계약 시 「개인정보 보호법」 제26조에 따라 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 관리·감독합니다.</div></div>
 
-<div class="article"><h2>제7조 (광고 및 분석 도구의 미사용)</h2><div class="body">서비스는 다음 항목을 일체 사용하지 않습니다.
+<div class="article"><h2>제7조 (광고·분석 도구 미사용 및 앱 안정성 진단 도구 고지)</h2><div class="body">서비스는 광고·마케팅 목적의 다음 항목을 일체 사용하지 않습니다.
 
   · 광고 식별자 (IDFA, AAID)
   · 광고 SDK (AdMob 등)
-  · 분석 SDK (Firebase Analytics, Google Analytics 등)
+  · 사용자 행동 분석 SDK (Firebase Analytics, Google Analytics 등)
   · 쿠키 및 추적 픽셀
-  · 크래시 로그 수집 도구
 
-Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사용되며, 사용자 행동 분석이나 광고 타겟팅에는 사용되지 않습니다. Firebase Cloud Messaging은 모임 알림 발송 용도로만 사용됩니다.</div></div>
+[앱 안정성 진단 도구]
+서비스는 앱의 비정상 종료(크래시)·오류를 진단하고 안정성을 개선하기 위해 Firebase Crashlytics를 사용합니다. 이를 통해 수집되는 정보는 크래시 발생 시점의 스택 트레이스(오류가 발생한 코드 위치), 앱 설치 식별자(Crashlytics/Firebase Installation ID), 기기 모델·운영체제 버전 등 기술 정보이며, 약 90일간 보관된 후 자동 삭제됩니다(처리 주체: Google LLC / Firebase). 운영자는 이용자의 계정 식별 정보, 기도제목, 검색어, 신앙 Q&A 질문 등 민감한 원문을 크래시 보고에 포함하지 않습니다. Crashlytics는 오직 앱 품질 개선 목적으로만 사용되며 광고·마케팅이나 외부 제3자 제공에는 사용되지 않습니다.
+
+Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사용되며, 광고 타겟팅에는 사용되지 않습니다. Firebase Cloud Messaging은 모임 알림 발송 용도로만 사용됩니다. 다만 서비스 운영·보안·안정성을 위한 접속 기록 및 앱 내 화면 이동 기록(제1조·제2조)은 외부 분석 도구 없이 자체적으로 수집·열람되며, 광고·마케팅 목적이나 외부 제3자 제공에는 사용되지 않습니다.</div></div>
 
 <div class="article"><h2>제8조 (정보주체의 권리·의무 및 행사방법)</h2><div class="body">이용자는 언제든지 다음과 같은 권리를 행사할 수 있습니다.
 
@@ -229,7 +231,7 @@ Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사
 <div class="supplement">
 <div class="label">SUPPLEMENT</div>
 <h2>부칙</h2>
-<div class="row"><span class="k">시행일</span><span class="v">2026년 6월 18일</span></div>
+<div class="row"><span class="k">시행일</span><span class="v">2026년 7월 2일</span></div>
 <div class="row"><span class="k">상호</span><span class="v">홍독 스튜디오 (Hongdoc Studio)</span></div>
 <div class="row"><span class="k">사업자등록번호</span><span class="v">355-58-00987</span></div>
 <div class="row"><span class="k">이메일</span><span class="v">hongdocstudio@gmail.com</span></div>
@@ -241,7 +243,9 @@ Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사
 · 2026년 6월 1일: 신앙 Q&A 질문의 익명 공개 게시 관련 고지 추가 (v1.0.3)
 · 2026년 6월 18일: 삭제된 모임 콘텐츠의 안전·분쟁 대응 목적 30일 보관 후 자동 파기 정책 명시 (v1.0.4)
 · 2026년 6월 18일: 교회 가입신청 정보(이름·선택 전화번호·확인 메모) 처리 고지 추가 (v1.0.5)
-· 2026년 6월 18일: 위기 신호 안전 검토 기록·모임 돌봄 메모·이용 제한 기록 처리 고지 추가 (v1.0.6)</div>
+· 2026년 6월 18일: 위기 신호 안전 검토 기록·모임 돌봄 메모·이용 제한 기록 처리 고지 추가 (v1.0.6)
+· 2026년 6월 24일: 접속 기록(접속·종료 시각·체류 시간)·앱 내 화면 이동 기록·표시 이름(이메일 대체) 처리 고지 추가 (v1.0.7)
+· 2026년 7월 2일: Firebase Crashlytics 앱 안정성 진단 도구 고지 명확화 (제6·7조) (v1.0.8)</div>
 </div>
 
 <footer>© 2026 홍독 스튜디오 (Hongdoc Studio) · 마라나타</footer>
