@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>마라나타 개인정보처리방침</title>
-<meta name="description" content="마라나타 (Maranatha) 개인정보처리방침 v1.0.8">
+<meta name="description" content="마라나타 (Maranatha) 개인정보처리방침 v1.0.9">
 <style>
 :root{--sapphire:#1B3A6B;--gold:#D4A867;--navy:#0A1F4A;--bg:#fff;--surface:#F4F7FB;--text:#0A1F4A;--text2:#4A6FA5}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -42,7 +42,7 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
 <div class="label">PRIVACY</div>
 <h1>개인정보처리방침</h1>
 <div class="rule"></div>
-<div class="meta">버전 v1.0.8 · 시행일 2026년 7월 2일<br>운영자: 홍독 스튜디오 (Hongdoc Studio)</div>
+<div class="meta">버전 v1.0.9 · 시행일 2026년 7월 30일<br>운영자: 홍독 스튜디오 (Hongdoc Studio)</div>
 </div>
 
 <div class="principle">
@@ -84,7 +84,7 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
   · 즐겨찾기 한 말씀카드
   · 알림 설정 시간
   · 사용자 환경 설정 (테마, 폰트, 글자 크기 등)
-  · 모임(그룹) 활동 내역 (작성한 기도제목·묵상·한 줄 나눔, 함께 기도 반응)
+  · 모임(그룹) 활동 내역 (작성한 기도제목·묵상·한 줄 나눔, 함께 기도 반응, 모임 출석·참석 기록(모임장이 기록하는 모임별 출석 여부와 일정 참석 응답))
   · 교회 가입신청 정보 (이름, 전화번호(선택), 확인 메모(선택), 교회가 설정한 가입 질문에 대한 답변(선택), 신청 상태)
   · 푸시 알림 등록 토큰 (FCM — 모임 알림 발송용)
   · 신앙 Q&A에 보낸 질문 내용
@@ -115,7 +115,7 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
 
 2. 교회 가입신청 정보: 가입 승인·반려 처리 및 교회 내 가입 이력 확인을 위해 계정 삭제 또는 교회 관리자 정리 전까지 보관될 수 있습니다. 대기 중인 신청만 관리자 화면에 표시되며, 일반 교우에게는 공개되지 않습니다.
 
-3. 위기 신호 감지 기록 및 이용 제한 기록: 본인 계정에 귀속된 정보로서 회원 탈퇴(계정 삭제) 시 다른 본인 데이터와 함께 즉시 영구 삭제됩니다. 모임 돌봄 메모는 해당 모임이 유지되는 동안 보관되며, 모임 삭제 또는 회원 탈퇴(계정 삭제) 시 함께 파기됩니다.
+3. 위기 신호 감지 기록 및 이용 제한 기록: 본인 계정에 귀속된 정보로서 회원 탈퇴(계정 삭제) 시 다른 본인 데이터와 함께 즉시 영구 삭제됩니다. 또한 위기 신호 감지 기록은 탈퇴하지 않으셔도 기록 시점부터 90일이 지나면 자동 파기됩니다(안전 확인이라는 목적에 필요한 최소 기간만 보유). 모임 돌봄 메모는 해당 모임이 유지되는 동안 보관되며, 모임 삭제 또는 회원 탈퇴(계정 삭제) 시 함께 파기됩니다.
 
 4. 사용자 환경 설정 등 디바이스 내부 데이터: 앱 삭제 시 디바이스에서 함께 삭제됩니다.
 
@@ -130,6 +130,10 @@ footer{text-align:center;font-size:12px;color:var(--text2);margin-top:48px}
   · 닉네임(표시 이름) 및 프로필 이미지
   · 모임 내에 작성한 기도제목·일일묵상 나눔·자유묵상·QT 한 줄 나눔 등의 콘텐츠와 작성 시각
   · 기도 반응(함께 기도) 여부
+  · 모임 출석·참석 기록 (모임장이 기록하는 출석 여부와 일정 참석 응답)
+
+[모임장의 참여·출석 기록 파일 내보내기]
+모임장은 모임 운영을 위해 모임원의 참여 집계(이름·역할·가입일·묵상 참여 여부·기도제목 수)와 출석 기록(날짜별 출석 여부·출석률)을 파일(CSV)로 내보내 카카오톡·메일 등 앱 밖으로 전달할 수 있습니다. 내보낸 파일은 서비스가 관리할 수 없으므로, 파일의 보관·전달·파기에 대한 책임은 내보낸 모임장에게 있습니다. 모임장은 이 파일을 모임 돌봄 목적 외로 사용하거나 모임 밖에 공개해서는 안 됩니다.
 
 [교회 가입신청 정보의 공개]
 공개 교회 목록에서 교회 가입신청을 보내는 경우, 신청자가 입력한 이름·전화번호(선택)·확인 메모(선택)·교회가 설정한 가입 질문에 대한 답변(선택)은 해당 교회의 관리자에게만 가입 확인 및 승인 처리를 위해 공개됩니다. 이 정보는 일반 교우나 다른 교회 관리자에게 공개되지 않습니다.
@@ -231,7 +235,7 @@ Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사
 <div class="supplement">
 <div class="label">SUPPLEMENT</div>
 <h2>부칙</h2>
-<div class="row"><span class="k">시행일</span><span class="v">2026년 7월 2일</span></div>
+<div class="row"><span class="k">시행일</span><span class="v">2026년 7월 30일</span></div>
 <div class="row"><span class="k">상호</span><span class="v">홍독 스튜디오 (Hongdoc Studio)</span></div>
 <div class="row"><span class="k">사업자등록번호</span><span class="v">355-58-00987</span></div>
 <div class="row"><span class="k">이메일</span><span class="v">hongdocstudio@gmail.com</span></div>
@@ -245,7 +249,8 @@ Firebase Auth와 Firestore는 회원 인증과 데이터 보관 용도로만 사
 · 2026년 6월 18일: 교회 가입신청 정보(이름·선택 전화번호·확인 메모) 처리 고지 추가 (v1.0.5)
 · 2026년 6월 18일: 위기 신호 안전 검토 기록·모임 돌봄 메모·이용 제한 기록 처리 고지 추가 (v1.0.6)
 · 2026년 6월 24일: 접속 기록(접속·종료 시각·체류 시간)·앱 내 화면 이동 기록·표시 이름(이메일 대체) 처리 고지 추가 (v1.0.7)
-· 2026년 7월 2일: Firebase Crashlytics 앱 안정성 진단 도구 고지 명확화 (제6·7조) (v1.0.8)</div>
+· 2026년 7월 2일: Firebase Crashlytics 앱 안정성 진단 도구 고지 명확화 (제6·7조) (v1.0.8)
+· 2026년 7월 30일: 모임 출석·참석 기록 수집 항목 추가 · 위기 신호 기록 90일 자동 파기 명시 · 모임장의 참여·출석 기록 파일(CSV) 내보내기 고지 추가 (v1.0.9)</div>
 </div>
 
 <footer>© 2026 홍독 스튜디오 (Hongdoc Studio) · 마라나타</footer>
